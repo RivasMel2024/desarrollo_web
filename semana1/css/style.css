@@ -1,0 +1,91 @@
+/* Las importaciones van siempre al inicio de la hoja */
+/* @import url('https://fonts.googleapis.com/css2?family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Asimovian&family=Epunda+Slab:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+/* RESET CSS -- quita los maegenes ue traen por defecto los navegadores. */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(222, 184, 135, 0.448);
+    /* background-image: url("../img/moose.jpg") ;
+    background-repeat: no-repeat; */
+    /* Toodo lo anterior se puede resumir en este atributo 
+    background: #color url() repeato-x o repeat-y*/
+     
+    /* background-position: center;
+    background-attachment: fixed; /* Ayuda a que no se mueva el contenido a pesar de hacer scroll */ 
+    /* background-size: cover;  */
+    color: black;
+    line-height: 1.6;
+}
+
+header { 
+    text-align: center;
+    background-color: #107c41;
+    color: white;
+}
+
+header h1{ 
+    font-family: "Asimovian", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.menu a {
+    color: antiquewhite;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.presentacion, .articulos {
+    width: 75%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+}
+
+.articulos h3 {
+    color: purple;
+}
+
+.articulos article{
+    margin-bottom: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#tabla-obras {
+    margin: 20px auto; /* Esto ayuda a que se centren los elementos */
+    border: 2px solid #333;
+    border-radius: 10px;
+}
+
+#tabla-obras * {
+    border: 2px solid #333;
+    padding: 5px;
+}
+
+#tabla-obras thead{
+    background-color: rgba(128, 0, 128, 0.353);
+}
