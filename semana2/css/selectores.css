@@ -1,0 +1,87 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Selector descendiente */
+div p{
+    color: blue;
+}
+
+/* Selector de hijos > */
+/* Los parrafos hijos de div. Son hijos directamente de los div */
+div > p {
+    font-weight: bold;
+}
+
+/* Seleccion adyacencia + */
+/* Al mismo nivel y uno a continuacion de otro */
+/* Se seleccionan todos los parrafos que estan despues de un h2 */
+h2 + p{
+    font-family: monospace;
+}
+
+/* Selector general de hermanos */
+/* Los parrafos que son hermanos que son de un h2. No es necesario que sean continuos */
+h2 ~ p {
+    background-color: lightyellow;
+}
+
+/* Selector de atributos */
+a[href="#css"]{
+    color: red;
+}
+
+/* Pseudo elementos */
+/* Pseudo elementos es aplicar estilos a una parte especifica */
+p::first-line{
+    text-transform: uppercase;
+}
+
+/* Pseudo clases -- es un estado especial a un elemento en especifico */
+a{
+    transition: all 1s;
+}
+
+a:link{
+    color: blue;
+}
+
+a:visited{
+    color: purple;
+}
+
+a:hover{
+    font-size: 2em;
+}
+
+a:active{
+    color: white;
+    background-color: navy;
+}
+
+/* Pseudo clases estructurales */
+/* Escogea los primeros parrafos no importa de quien sea hijo. 
+Es decir que se selecciona la primera etiqueta que hay dentro de una otra etiqueta */
+p:first-child{
+    border: 1px solid orange;
+}
+
+p:last-child{
+    border: 1px solid blue;
+}
+
+/* Pares -- se pudo haber usado "even" */
+.lista li:nth-child(2n) {
+    background-color: lightblue;
+    color: navy;
+}
+
+/* Impares -- se pudo haber escrito "odd"*/
+.lista li:nth-child(2n + 1) {
+    background-color: navy;
+    color: white;
+}
+
+p:last-of-type {
+    text-decoration: underline;
+}
