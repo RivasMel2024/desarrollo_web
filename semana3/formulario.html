@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo formulario</title>
+</head>
+<body>
+    <main>
+        <!-- Por temas de ejemplo, el action queda vacio -->
+        <form action="posicionamiento.html" method="post" autocomplete="on">
+            <table>
+                <tr>
+                    <td> <label for="nombre">Nombre:</label> </td>
+                    <td> <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required> </td>
+                </tr>
+                
+                <tr>
+                    <td> <label for="apellido">Apellido:</label> </td>
+                    <td> <input type="text" id="apellido" name="apellido" placeholder="Ingresa tu apellido" required > </td>
+                </tr>
+                
+                <tr>
+                    <td> <label for="fechaNaciemiento">Fecha de Naciemiento</label> </td>
+                    <td> <input type="date" name="fechaNaciemiento" id="fechaNaciemiento"> </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="password">Ingrese su contraseña</label> </td>
+                    <td> <input type="password" name="password" id="password" placeholder="Ingresa tu contraseña" required> </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="genero">Genero</label> </td>
+                    <td> 
+                        <label for="femenino">Femenino</label>
+                        <input type="radio" name="genero" id="femenino" value="Femenino">
+
+                        <label for="masculino">Masculino</label>
+                        <input type="radio" name="genero" id="masculino" value="Masculino">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="materias">Materias cursadas</label> </td>
+                    <td> <input type="number" name="materias" id="materias" min="1" max="7" value="5"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="dui">Digite su DUI:</label></td>
+                    <td> <input type="text" id="dui" pattern="[0-9]{8}-[0-9]" placeholder="00000000-0" required title="El numero ingresado no es valido"> </td>
+                </tr>
+
+                <tr>
+                    <td> <input type="submit" value="Registrase"> </td>
+                    <td> <input type="reset" value="Borrar datos"> </td>
+                </tr>
+            </table>
+        </form>
+    </main>
+</body>
+</html>

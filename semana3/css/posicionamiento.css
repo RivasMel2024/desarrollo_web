@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+header {
+    width: 100%;
+    height: 14vh; /* 10% del alto de la ventana */
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header nav .menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.menu a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.contenedor { 
+    position: relative;
+    display: flex;
+    width: 90%;
+    margin: 10px auto 10vh; /* Centramos */
+    flex-wrap: wrap;
+}
+
+.contenedor .card {
+    width: 32.3%;
+    margin: 10px 0.5%;
+    height: 200px;
+}
+
+/* Seleccionar segunda card */
+
+.contenedor .card:nth-child(2) {
+    position: relative; /* right y botton para arriba son negativos, left y top es movimiento positivo para arriba */
+    /* El espacio que queda siempre se mantiene, no es sustituido por otro elemento */
+    bottom: -50px;
+    right: -20px;
+    background-color: blue;
+
+}
+
+.contenedor .card:nth-child(5) {
+    position: absolute;
+    /* Es sustituido por otro elemento */
+    left: 0px;
+    bottom: 0px;
+    background-color: palevioletred;
+}
+
+/* TODO: poner diferencia entre visility y display */
+
+.contenedor .card:nth-child(4) {
+    display: none;
+}
+/* 
+.contenedor .card:nth-child(6) {
+    visibility: hidden;
+} */
+
+footer {
+    background-color: #333;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    bottom: 0;
+}
+
+footer p { 
+    color: white;
+    text-align: center;
+    font-weight: 900;
+    padding-top: 4vh;
+}
+

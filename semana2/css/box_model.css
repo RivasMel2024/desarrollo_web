@@ -1,0 +1,71 @@
+/* IMPORT DE GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* Esto ayuda a que no se agregue mas margin o padding */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 10vh;
+    color: navy;
+    background: #7bc0db;
+    background: radial-gradient(circle, rgba(123, 192, 219, 1) 0%, rgba(165, 240, 196, 1) 50%, rgba(235, 227, 160, 1) 100%);    
+}
+
+header h1 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: rgba(211, 211, 211, 0.416);
+    overflow: auto;
+    padding: 25px;
+}
+
+.container article {
+    width: 32.6%;
+    height: 550px;
+    float: left;
+    margin: 10px .5%;
+    padding: 10px;
+    /* Siempre hay que poner el grosor del border, caso contrario no se mostrara */
+    border: 2px green dotted;
+    border-radius: 15px;
+    
+}
+
+/* box-shadow, si el angulo esta negativo, para mas para arriba, sino se mueve hacia abajo */
+
+.container article:nth-child(3n+1) {
+    margin-left: 0;
+}
+
+.container article:nth-child(3n) {
+    margin-right: 0;
+}
+
+.container article img{
+    margin: 10px auto;
+    display: block;
+    max-width: 80%;
+}
+
+.container article h3{
+    text-align: center;
+}
+
+.container article p{
+    text-align: justify;
+}
