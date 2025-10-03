@@ -1,0 +1,239 @@
+:root{
+    --primary: blueviolet;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+}
+
+header .logo{
+    padding: 25px 30px;
+    font-weight: bold; /* bold corresponde a 700 de grosor */
+    color: var(--primary);
+    font-size: 1.6em;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+header nav a:hover{
+    color: var(--primary);
+}
+
+.button{
+    font-size: 1.25em;
+    font-weight: bold;
+    color: white;
+    background-color: var(--primary);
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 20px auto;
+    display: inline-block;
+}
+
+/* HERO */
+
+#hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    background-image:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#hero h1{
+    color: white;
+    text-align: center;
+}
+
+/* SOMOS */
+
+#somos .container{
+    display: flex;
+    text-align: justify;
+    padding: 100px 10px;
+    justify-content: space-evenly;
+}
+
+.color-acento {
+    color: var(--primary);
+}
+
+#somos .img-container {
+    background-image: url(../img/somos-proya.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 45%;
+}
+
+#somos .texto {
+    width: 45%;
+    max-width: 600px;
+}
+
+#somos h2{ 
+    text-align: center;
+}
+
+/* PROGRAMAS */
+
+#nuestros-programas{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+#nuestros-programas .programas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+#nuestros-programas .card{
+    width: 30%;
+    padding: 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#nuestros-programas h3{
+    font-size: 2.2em;
+}
+
+#nuestros-programas .card p{
+    text-align: justify;
+}
+
+#nuestros-programas .card:nth-child(1){
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/front-end.jpg);
+}
+
+#nuestros-programas .card:nth-child(2){
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/full-stack.jpg);
+}
+
+
+#nuestros-programas .card:nth-child(3){
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/python.jpg);
+}
+
+#caracteristicas{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    line-height: 3em;
+}
+
+#final {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    height: 50vh;
+}
+
+footer {
+    background-color: rgb(245, 245, 245);
+}
+
+footer .container{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+    color: rgb(100, 100, 100);
+    text-align: center;
+}
+
+@media screen and (max-width:840px){
+    header .container, header nav {
+        display: flex;
+        flex-direction: column;
+    }
+    header nav {
+        padding-bottom: 25px;
+    }
+
+    .img-container {
+        display: none;
+    }
+  
+    #somos .texto {
+        width: 100%;
+        max-width: 700px;
+    }
+
+    #nuestros-programas .programas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 50px;
+    }   
+
+    #nuestros-programas .card{
+        width: 90%;
+        height: 250px;
+        padding: 20px;
+        margin: 15px;
+        align-content: center;
+    }
+
+    #nuestros-programas .card p{
+        display: none;
+    }
+}

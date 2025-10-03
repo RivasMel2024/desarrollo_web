@@ -10,7 +10,7 @@
 
 <body>
     <main>
-        <form action="../semana3/posicionamiento.html" method="post">
+        <form action="index.html" method="post" > 
 
             <div class="form-group">
                 <label for="nombre">Nombre:</label>
@@ -31,7 +31,7 @@
 
             <div class="form-group">
                 <label for="password">Contraseña:</label>
-                <input type="password" name=password" id="password" placeholder="Ingrese contraseña" required pattern="(?= [.*[A-Z]).{8,}$">
+                <input type="password" name="password" id="password" placeholder="Ingrese contraseña" required pattern="(?= [.*[A-Z]).{8,}$">
             </div>
 
 
@@ -40,7 +40,7 @@
                 <div id="genero">
                     <input type="radio" name="genero" id="genero_masculino" value=masculino>
                     <label for="genero_masculino">Masculino</label>
-                    <input type="radio" name="genero" id="genero_femenino" value="femenino">
+                    <input type="radio" name="genero" id="genero_femenino" value="femenino" >
                     <label for="genero_femenino">Femenino</label>
                 </div>
             </div>
@@ -54,7 +54,7 @@
 
             <div class="form-group">
                 <label for="dui">Dui:</label>
-                <input type="text" name="dui" id="dui" placeholder="Ingresa tu Dui" required pattern="[0-9](8)-[0-9](1)"
+                <input type="text" name="dui" id="dui" placeholder="00000000-0" required pattern="[0-9]{8}-[0-9]{1}"
                     title="El dui ingresado no es valido">
             </div>
 
@@ -73,8 +73,17 @@
                 <label for="perfil">Perfil Profesional</label>
                 <textarea name="perfil" id="perfil" rows="10"></textarea>
             </div>
-
             
+            <div>
+                <input type="text" name="sistema_op" id="sistema_op" list="OS">
+                <datalist id="OS">
+                    <option value="Mac OS"></option>
+                    <option value="Windows"></option>
+                    <option value="Linux"></option>
+
+                </datalist>
+            </div>
+
             <input type="submit" value="Registrarse" name="registrarse" id="registrarse">
             
         </form>
