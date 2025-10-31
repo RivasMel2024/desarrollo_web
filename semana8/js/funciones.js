@@ -70,3 +70,4 @@ const listadoNombres = datosAlumnos
     ).map(a => a.nombre)
 
 console.log(listadoNombres);
+ 
