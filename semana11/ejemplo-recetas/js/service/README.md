@@ -1,0 +1,1 @@
+En esta carpeta iran todas las configuraciones que tengan que ver con el almaacenamiento con firebase
